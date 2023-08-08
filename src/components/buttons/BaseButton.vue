@@ -48,7 +48,9 @@ defineProps<{
   }
 
   &_disabled {
-    background-color: $primary-disabled;
+    background-color: $grey;
+    outline-color: $grey;
+    color: $grey-m;
     cursor: not-allowed;
   }
 }

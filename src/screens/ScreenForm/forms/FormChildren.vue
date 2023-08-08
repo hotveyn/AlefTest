@@ -14,6 +14,7 @@ const userSettingsForm = useUserSettingsForm()
       <BaseButton
         class="form-children__add"
         :disabled="!userSettingsForm.possibleToAddChild"
+        v-show="userSettingsForm.possibleToAddChild"
         @click.prevent="userSettingsForm.addEmptyChildren()"
         type="secondary"
       >

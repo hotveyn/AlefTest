@@ -31,7 +31,7 @@ export const useUserSettingsForm = defineStore('userSettingsForm', () => {
     const newId = children.at(-1)?.id || 0
     children.push({
       id: newId + 1,
-      name: '',
+      name: 'Имя',
       age: 0
     })
     touched.value = true
