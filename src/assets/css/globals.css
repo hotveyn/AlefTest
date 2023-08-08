@@ -1,0 +1,23 @@
+.container {
+  width: min(616px, 100%);
+  margin: 0 auto;
+}
+
+.container-lg {
+  width: min(1000px, 100%);
+  margin: 0 auto;
+}
+
+.h2 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: #111111;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*# sourceMappingURL=globals.css.map */
