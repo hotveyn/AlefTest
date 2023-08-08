@@ -26,7 +26,7 @@ const userSettingsForm = useUserSettingsForm()
             @click.prevent="userSettingsForm.reset()"
             type="primary"
           >
-            Ресет
+            Отменить изменения
           </BaseButton>
         </div>
       </form>

@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import type { IChild } from '@/interfaces/IChild'
 import { reactive } from 'vue'
+import _ from 'lodash'
 
 export const useChildrenStore = defineStore('children', () => {
   const children = reactive<IChild[]>([
@@ -17,12 +18,12 @@ export const useChildrenStore = defineStore('children', () => {
   ])
 
   function getChildrenValues() {
-    return JSON.parse(JSON.stringify(children))
+    return _.cloneDeep(children)
   }
 
   function setChildren(payload: IChild[]) {
     children.splice(0, children.length)
-    children.push(...payload)
+    children.push(..._.cloneDeep(payload))
   }
 
   return { children, getChildrenValues, setChildren }

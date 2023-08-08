@@ -6,7 +6,7 @@ defineProps<{
 }>()
 
 defineEmits<{
-  'update:value': [value: T]
+  'update:value': [value: HTMLInputElement['value']]
 }>()
 </script>
 
@@ -18,7 +18,7 @@ defineEmits<{
         :type="type"
         class="input"
         :value="modelValue"
-        @input="$emit('update:value', $event.target.value)"
+        @input="$emit('update:value', ($event.target as HTMLInputElement).value)"
       />
     </label>
   </div>
