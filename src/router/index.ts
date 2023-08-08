@@ -4,6 +4,11 @@ import PagePreview from '@/pages/PagePreview.vue'
 
 const routes = [
   {
+    path: '/',
+    name: 'home',
+    component: PageForm
+  },
+  {
     path: '/form',
     name: 'form',
     component: PageForm

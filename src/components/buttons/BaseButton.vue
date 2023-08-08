@@ -1,17 +1,8 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-
 defineProps<{
   type: 'primary' | 'flat' | 'secondary'
   disabled?: boolean
 }>()
-
-// const disabledClass = computed(() => {
-//   if (!disabled) {
-//     return
-//   }
-//   return
-// })
 </script>
 
 <template>
@@ -41,6 +32,7 @@ defineProps<{
     color: $white;
     background-color: $primary;
   }
+
   &_flat {
     color: $primary;
     padding: 0;
